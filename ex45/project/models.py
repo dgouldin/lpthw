@@ -134,7 +134,7 @@ Battle(object):
 			if self.enemies[0] in value:
 				return enemy_difficulty['attack'][value]
 			else:
-				raise ValueError('Dammit! It is broken.')
+				raise ValueError('Enemy attack value not found!')
 				
 		self.enemies[0] in enemy_difficulty['easy']:
 			return 2
